@@ -37,4 +37,4 @@ Following the course https://mixandgo.com/lp/practical-ruby-on-rails-for-beginne
 ### Things I know don't work properly
 
 - `flash` messages sometimes "stick". I need to consult on best practices on this one. When is clearing flash messages typically done?
-- No ability to log out (was not a requirement;)
+- No ability to log out (was not a requirement)
