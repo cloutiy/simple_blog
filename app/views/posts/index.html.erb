@@ -1,0 +1,10 @@
+<h1>All Posts</h1>
+
+<%= link_to "New Post", new_post_path %>
+
+<%= @posts.each do |post| %>
+<div>
+  <%= link_to post.title, post %>
+  by <%= post.user.email %>
+</div>
+<% end %>

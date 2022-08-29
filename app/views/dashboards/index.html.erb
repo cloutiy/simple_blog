@@ -1,0 +1,14 @@
+<h1> <%= @user.email %>'s Dashboard</h1>
+
+<%= link_to "Back to Main", root_page_path %>
+
+<%= link_to "New Post", new_post_path %>
+
+<% @user.posts.each do |post| %>
+  <div>
+    <%= link_to post.title, post %>
+  </div>
+<% end %>
+
+
+

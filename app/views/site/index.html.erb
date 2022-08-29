@@ -1,0 +1,13 @@
+<h1>Welcome to Bashnode</h1>
+
+<span> 
+<%= link_to "Login", new_login_path %>
+<%= link_to "Register", new_registration_path %>
+</span>
+
+<% @posts.each do |post| %>
+<div>
+  <%= link_to post.title, post %>
+  by <%= post.user.email %>
+</div>
+<% end %>
